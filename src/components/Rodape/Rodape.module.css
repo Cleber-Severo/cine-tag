@@ -1,0 +1,18 @@
+.rodape {
+    background-color: var(--preto);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+}
+
+.rodape h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #F0F0F0;
+}
