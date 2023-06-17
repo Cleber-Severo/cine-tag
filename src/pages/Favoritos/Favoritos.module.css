@@ -1,3 +1,5 @@
 .container {
     margin: 2em 6em;
+    display: flex;
+    justify-content: space-around;
 }
