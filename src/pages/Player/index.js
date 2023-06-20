@@ -4,12 +4,18 @@ import videos from 'json/db.json'
 import React from 'react'
 import Banner from 'components/Banner';
 import Titulo from 'components/Titulo';
+import NaoEncontrada from 'pages/NaoEncontrada';
 
 function Player() {
-    const parametros = useParams();
-    console.log(parametros);
-    const video = videos.find(video => video.id === Number(parametros.id) )
-    console.log(video);
+  const parametros = useParams();
+  console.log(parametros);
+  const video = videos.find(video => video.id === Number(parametros.id) )
+  console.log(video);
+
+  if (!video) {
+    return <NaoEncontrada/>
+  }
+
   return (
     <>
         <Banner imagem='player' />
