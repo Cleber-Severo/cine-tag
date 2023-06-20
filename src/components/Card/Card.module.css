@@ -23,3 +23,9 @@
 .favoritar:hover {
     cursor: pointer;
 }
+
+.Link {
+    text-decoration: none;
+    text-align: left;
+    color: var(--preto);
+}
